@@ -2,13 +2,21 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+class Navigation extends Component {
+  render(){
+    return(
+      <nav className="navbar">
+        <h1 className="title">Favorite Murray</h1>
+      </nav>
+    );
+  }
+}
+
 class App extends Component {
   render() {
     return (
+      <Navigation /> //added the Navigation component
       <div className="App">
-        <nav className="navbar">
-          <h1 className="title">Favorite Murray</h1>
-        </nav>
         <main className="main-body">
           <div className="top">
             <div className="image-one">
